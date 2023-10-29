@@ -1,0 +1,12 @@
+export { default as Button } from "../mini_components/button/Button.jsx";
+export { default as SectionText } from "../mini_components/section_text/SectionText";
+export { default as Faq } from "../mini_components/faq/Faq";
+export { default as BigBlueButton } from "../mini_components/bigBlueButton/BigBlueButton";
+export { default as SectionTextTwo } from "../mini_components/sectionTextTwo/SectionTextTwo";
+export { default as MerchantPerk } from "../mini_components/merchantPerk/MerchantPerk";
+export { default as MerchantBlockContent } from "../mini_components/merchantBlockContent/MerchantBlockContent";
+export { default as BigButton } from "../mini_components/bigButton/BigButton.jsx";
+export { default as Location } from "../mini_components/location/Location";
+export { default as Input } from "../mini_components/input/Input";
+export { default as Select } from "../mini_components/select/Select";
+export { default as TextArea } from "../mini_components/textarea/TextArea";

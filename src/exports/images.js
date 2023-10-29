@@ -1,0 +1,13 @@
+export { default as bike } from "../assets/images/bike.png";
+export { default as business } from "../assets/images/business.png";
+export { default as complete } from "../assets/images/complete.png";
+export { default as delivery } from "../assets/images/delivery.png";
+export { default as graph } from "../assets/images/graph.png";
+export { default as insurance } from "../assets/images/insurance.png";
+export { default as merchant_bg } from "../assets/images/merchant_bg.png";
+export { default as plain_green } from "../assets/images/plain_green.png";
+export { default as seamless } from "../assets/images/seamless.png";
+export { default as secure } from "../assets/images/secure.png";
+export { default as support } from "../assets/images/support.png";
+export { default as whatsapp } from "../assets/images/whatsapp.png";
+export { default as barcode } from "../assets/images/barcode.png";

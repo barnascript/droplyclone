@@ -1,0 +1,458 @@
+.wrapper {
+  height: 70px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  .container {
+    height: inherit;
+
+    .desktop_container {
+      height: inherit;
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      place-content: center;
+      position: relative;
+
+      .logo {
+        display: flex;
+        align-self: center;
+        grid-column: span 2;
+      }
+
+      .desktop_links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 33px;
+        grid-column: span 7;
+
+        a {
+          color: var(--eerie-black);
+        }
+
+        .how_droply_works {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+
+          &:hover ~ .dropdown {
+            display: flex;
+          }
+        }
+
+        .dropdown {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          background-color: white;
+          padding: 12px;
+          padding-left: 0;
+          padding-right: 0;
+          border-radius: 8px;
+          top: 80px;
+          margin-left: 20px;
+          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+          display: none;
+
+          a {
+            padding: 6px;
+            padding-inline: 24px;
+            padding-top: 12px;
+
+            &:hover {
+              background-color: rgba(#000, $alpha: 0.1);
+            }
+          }
+        }
+        .dropdown_visible {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          position: absolute;
+          background-color: white;
+          padding: 12px;
+          padding-left: 0;
+          padding-right: 0;
+          border-radius: 8px;
+          top: 80px;
+          margin-left: 20px;
+          box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+          a {
+            padding: 6px;
+            padding-inline: 24px;
+            padding-top: 12px;
+
+            &:hover {
+              background-color: rgba(#000, $alpha: 0.1);
+            }
+          }
+        }
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        grid-column: span 1;
+      }
+    }
+  }
+  .mobile_wrapper {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    height: 70px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+
+    .container {
+      display: none;
+
+      .desktop_container {
+        display: none;
+      }
+    }
+    .mobile_wrapper {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+
+      .mobile_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        width: 100%;
+        height: inherit;
+
+        .mobile_nav {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          position: fixed;
+          height: 70px;
+          background-color: white;
+          z-index: 1000;
+          padding-left: 20px;
+          padding-right: 20px;
+          left: 0;
+          top: 0;
+
+          .logo {
+            cursor: pointer;
+          }
+          .button_and_controls {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .buttons {
+              display: none;
+            }
+            .controls {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              gap: 5px;
+              cursor: pointer;
+              height: 20px;
+              width: 20px;
+              transition: all 0.1 ease-in-out;
+
+              .bar_one,
+              .bar_two,
+              .bar_three {
+                background-color: black;
+                width: 20px;
+                height: 2px;
+                transition: all 0.1 ease-in-out;
+                transform: rotate(0deg);
+                user-select: none;
+              }
+
+              .bar_one_slant {
+                transform: rotate(45deg);
+                background-color: black;
+                width: 20px;
+                height: 2px;
+                transition: all 0.1 ease-in;
+              }
+              .bar_two_slant {
+                display: none;
+              }
+              .bar_three_slant {
+                transform: rotate(-45deg);
+                background-color: black;
+                width: 20px;
+                height: 2px;
+                position: absolute;
+                transition: all 0.1 ease-in;
+              }
+            }
+          }
+        }
+
+        .mobile_links_container {
+          transition: all 0.1s ease-in;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          position: absolute;
+          top: 70px;
+          padding-top: 50px;
+          padding-left: 20px;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: var(--very-pale-orange);
+          display: none;
+
+          .mobile_links {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            a {
+              color: var(--eerie-black);
+            }
+            .how_droply_works {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+
+          .buttons {
+            display: flex;
+            gap: 30px;
+          }
+        }
+        .mobile_links_container_visible {
+          display: flex;
+          transition: all 0.1s ease-in;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          position: absolute;
+          top: 70px;
+          padding-top: 50px;
+          padding-left: 20px;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: var(--very-pale-orange);
+          z-index: 999;
+
+          .mobile_links {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            a {
+              color: var(--eerie-black);
+            }
+            .how_droply_works {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+
+          .buttons {
+            display: flex;
+            gap: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1180px) {
+  .wrapper {
+    height: 70px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+
+    .container {
+      display: none;
+
+      .desktop_container {
+        display: none;
+      }
+    }
+    .mobile_wrapper {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 70px;
+
+      .mobile_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        width: 100%;
+        height: inherit;
+
+        .mobile_nav {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          position: fixed;
+          margin: auto;
+          height: 70px;
+          background-color: white;
+          z-index: 1000;
+          padding-left: 20px;
+          padding-right: 20px;
+          left: 0;
+          top: 0;
+
+          .logo {
+            cursor: pointer;
+            display: flex;
+            align-self: center;
+          }
+          .button_and_controls {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .buttons {
+              display: flex;
+              align-items: center;
+              gap: 20px;
+            }
+            .controls {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              flex-direction: column;
+              gap: 5px;
+              cursor: pointer;
+              height: 20px;
+              width: 20px;
+              transition: all 0.1 ease-in-out;
+
+              .bar_one,
+              .bar_two,
+              .bar_three {
+                background-color: black;
+                width: 20px;
+                height: 2px;
+                transition: all 0.1 ease-in-out;
+                transform: rotate(0deg);
+                user-select: none;
+              }
+
+              .bar_one_slant {
+                transform: rotate(45deg);
+                background-color: black;
+                width: 20px;
+                height: 2px;
+                transition: all 0.1 ease-in;
+              }
+              .bar_two_slant {
+                display: none;
+              }
+              .bar_three_slant {
+                transform: rotate(-45deg);
+                background-color: black;
+                width: 20px;
+                height: 2px;
+                position: absolute;
+                transition: all 0.1 ease-in;
+              }
+            }
+          }
+        }
+
+        .mobile_links_container {
+          transition: all 0.1s ease-in;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          position: absolute;
+          top: 70px;
+          padding-top: 50px;
+          padding-left: 20px;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: var(--very-pale-orange);
+          z-index: 999;
+          display: none;
+
+          .mobile_links {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            a {
+              color: var(--eerie-black);
+            }
+            .how_droply_works {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+
+          .buttons {
+            display: none;
+          }
+        }
+        .mobile_links_container_visible {
+          display: flex;
+          transition: all 0.1s ease-in;
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+          position: absolute;
+          top: 70px;
+          padding-top: 50px;
+          padding-left: 20px;
+          left: 0;
+          width: 100%;
+          height: 100vh;
+          background-color: var(--very-pale-orange);
+          z-index: 999;
+
+          .mobile_links {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            a {
+              color: var(--eerie-black);
+            }
+            .how_droply_works {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+          }
+
+          .buttons {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

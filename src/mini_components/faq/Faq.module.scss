@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  border-bottom: 1.5px solid var(--mercury);
+  transition: all 0.3s ease-in-out;
+
+  .question_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--pampas);
+    position: relative;
+    z-index: 1;
+    padding-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .answer {
+    display: flex;
+    align-self: flex-start;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 10px;
+    text-align: left;
+  }
+}

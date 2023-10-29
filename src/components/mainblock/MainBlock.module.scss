@@ -1,0 +1,217 @@
+.wrapper {
+  background-color: var(--eerie-black);
+  padding-bottom: 100px;
+  padding-top: 100px;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 123px;
+    cursor: default;
+
+    .mission {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 21px;
+      max-width: 70%;
+
+      .title {
+        color: white;
+      }
+
+      .specialH2 {
+        color: white;
+        font-weight: 300;
+      }
+    }
+
+    .main_block {
+      display: flex;
+      flex-direction: column;
+      gap: 64px;
+
+      h3 {
+        color: white;
+        display: flex;
+        align-self: center;
+      }
+
+      width: 100%;
+      .blocks {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+        .block_one {
+          display: flex;
+          align-items: center;
+          grid-gap: 40px;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(#fff, $alpha: 0.1);
+          .section_text {
+            display: flex;
+            background-color: transparent;
+            padding-left: 40px;
+            width: 50%;
+          }
+
+          img {
+            height: max-content;
+            width: 50%;
+            height: 100%;
+          }
+        }
+        .block_two {
+          display: flex;
+          grid-gap: 40px;
+          height: 100%;
+          width: 100%;
+          background-color: rgba(#fff, $alpha: 0.1);
+
+          .section_text {
+            display: flex;
+            align-items: center;
+            background-color: transparent;
+            padding-left: 40px;
+            width: 50%;
+          }
+
+          img {
+            height: max-content;
+            width: 50%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    .container {
+      gap: 90px;
+
+      .mission {
+        max-width: 100%;
+      }
+
+      .main_block {
+        gap: 64px;
+
+        .blocks {
+          .block_one {
+            flex-direction: column;
+            .section_text {
+              padding-left: 20px;
+              padding-right: 20px;
+              padding-top: 50px;
+              width: 100%;
+            }
+
+            img {
+              width: 100%;
+              height: 300px;
+            }
+          }
+          .block_two {
+            flex-direction: column;
+
+            .section_text {
+              padding-left: 20px;
+              padding-right: 20px;
+              padding-bottom: 50px;
+              width: 100%;
+            }
+
+            img {
+              width: 100%;
+              height: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 601px) {
+  .wrapper {
+    .container {
+      gap: 90px;
+
+      .mission {
+        max-width: 100%;
+      }
+
+      .main_block {
+        gap: 64px;
+
+        .blocks {
+          .block_one {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            width: 100%;
+            .section_text {
+              padding-left: 20px;
+              padding-right: 0px;
+              padding-top: 50px;
+              padding-bottom: 50px;
+              grid-column: span 6;
+              width: 100%;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              grid-column: span 6;
+            }
+          }
+          .block_two {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            width: 100%;
+
+            .section_text {
+              padding-left: 20px;
+              padding-right: 0px;
+              padding-top: 50px;
+              padding-bottom: 50px;
+              grid-column: span 6;
+              width: 100%;
+            }
+
+            img {
+              width: 100%;
+              height: 100%;
+              grid-column: span 6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .wrapper {
+    .container {
+      .mission {
+        max-width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 901px) {
+  .wrapper {
+    .container {
+      .mission {
+        max-width: 80%;
+      }
+    }
+  }
+}

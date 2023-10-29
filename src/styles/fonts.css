@@ -1,0 +1,193 @@
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Black.ttf);
+}
+@font-face {
+  font-family: "PoppinsBold";
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: "PoppinsXBold";
+  src: url(../fonts/Poppins/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "PoppinsLight";
+  src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "PoppinsThin";
+  src: url(../fonts/Poppins/Poppins-Thin.ttf);
+}
+
+@font-face {
+  font-family: "PoppinsSemiBold";
+  src: url(../fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "PoppinsMedium";
+  src: url(../fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Epilogue";
+  src: url(../fonts/Epilogue/static/Epilogue-Black.ttf);
+}
+@font-face {
+  font-family: "EpilogueBold";
+  src: url(../fonts/Epilogue/static/Epilogue-Bold.ttf);
+}
+
+@font-face {
+  font-family: "EpilogueXBold";
+  src: url(../fonts/Epilogue/static/Epilogue-ExtraBold.ttf);
+}
+@font-face {
+  font-family: "EpilogueLight";
+  src: url(../fonts/Epilogue/static/Epilogue-Light.ttf);
+}
+
+@font-face {
+  font-family: "EpilogueThin";
+  src: url(../fonts/Epilogue/static/Epilogue-Thin.ttf);
+}
+
+@font-face {
+  font-family: "EpilogueSemiBold";
+  src: url(../fonts/Epilogue/static/Epilogue-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "EpilogueMedium";
+  src: url(../fonts/Epilogue/static/Epilogue-Medium.ttf);
+}
+
+@font-face {
+  font-family: "EpilogueRegular";
+  src: url(../fonts/Epilogue/static/Epilogue-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: "RobotoBold";
+  src: url(../fonts/roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+  font-family: "RobotoLight";
+  src: url(../fonts/roboto/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: "RobotoRegular";
+  src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "RobotoMedium";
+  src: url(../fonts/roboto/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: "RobotoThin";
+  src: url(../fonts/roboto/Roboto-Thin.ttf);
+}
+h1 {
+  /* h1 */
+  font-family: "PoppinsBold";
+  font-size: clamp(2.5rem, 4vw, 3rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.12px;
+}
+
+h2 {
+  font-family: "EpilogueBold";
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.specialH2 {
+  font-family: "EpilogueRegular";
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: "PoppinsBold";
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-style: normal;
+
+  line-height: 44px;
+}
+
+h5 {
+  /* h5 */
+  font-family: "PoppinsBold";
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 128.571% */
+}
+
+h6 {
+  /* h6 */
+  font-family: "PoppinsMedium";
+  font-size: 1.25rem;
+  font-style: normal;
+  line-height: 32px; /* 133.333% */
+}
+.subtitle {
+  font-family: "EpilogueRegular";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 140% */
+}
+
+.p-small {
+  font-family: "RobotoRegular";
+  font-size: clamp(0.875rem);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.014px;
+}
+
+.p-default,
+a {
+  font-family: "RobotoRegular";
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.014px;
+}
+
+li {
+  list-style: none;
+}
+
+.text {
+  font-family: "EpilogueRegular";
+  font-size: 0.6785rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 145.455% */
+  letter-spacing: 0.055px;
+}
+
+p {
+  font-family: "RobotoRegular";
+  font-size: 1rem;
+}

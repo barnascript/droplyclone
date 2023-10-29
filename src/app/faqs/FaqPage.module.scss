@@ -1,0 +1,72 @@
+.wrapper {
+  .faqs_div {
+    display: flex;
+    padding-top: 82px;
+    padding-bottom: 201px;
+    max-width: 10%;
+
+    h3 {
+      display: flex;
+      align-self: center;
+      text-align: center;
+    }
+    flex-direction: column;
+    gap: 40px;
+    max-width: 60%;
+    margin: auto;
+
+    .faqs {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    .faqs_div {
+      display: flex;
+      padding-top: 82px;
+      padding-bottom: 101px;
+      width: 100%;
+      flex-direction: column;
+      gap: 40px;
+      max-width: 90%;
+      margin: auto;
+
+      h3 {
+        display: flex;
+        align-self: center;
+        text-align: center;
+      }
+
+      .faqs {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+    }
+  }
+}
+@media screen and (min-width: 601px) {
+  .wrapper {
+    .faqs_div {
+      max-width: 80%;
+    }
+  }
+}
+@media screen and (min-width: 901px) {
+  .wrapper {
+    .faqs_div {
+      max-width: 70%;
+    }
+  }
+}
+@media screen and (min-width: 1001px) {
+  .wrapper {
+    .faqs_div {
+      max-width: 60%;
+    }
+  }
+}

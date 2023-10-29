@@ -1,0 +1,16 @@
+export { default as Navbar } from "../components/navbar/Navbar";
+export { default as Hero } from "../components/hero/Hero";
+export { default as MainBlock } from "../components/mainblock/MainBlock";
+export { default as HomeFaq } from "../components/homefaq/HomeFaq";
+export { default as GetInTouch } from "../components/getintouch/GetInTouch";
+export { default as Footer } from "../components/footer/Footer";
+export { default as About } from "../components/about/About";
+export { default as IndividualHero } from "../components/IndividualHero/IndividualHero";
+export { default as SectionContent } from "../components/IndividualBlock/IndividualBlock";
+export { default as MerchantHero } from "../components/merchantHero/MerchantHero";
+export { default as MerchantPerks } from "../components/merchantPerks/MerchantPerks";
+export { default as MerchantBlocks } from "../components/merchantBlocks/MerchantBlocks.jsx";
+export { default as MerchantBlock } from "../components/merchantBlock/MerchantBlock";
+export { default as MerchantBlockReverse } from "../components/merchantBlockReverse/MerchantBlockReverse.jsx";
+export { default as IndividualBlocks } from "../components/IndividualBlocks/IndividualBlocks";
+export { default as ContactForm } from "../components/contactForm/ContactForm";

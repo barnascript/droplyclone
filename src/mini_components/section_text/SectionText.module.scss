@@ -1,0 +1,24 @@
+.wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 24px;
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+
+    .category {
+      color: var(--very-pale-orange);
+    }
+
+    .title {
+      color: white;
+    }
+  }
+
+  p {
+    color: rgba($color: #fff, $alpha: 0.6);
+  }
+}
