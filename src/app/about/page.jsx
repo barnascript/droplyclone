@@ -3,7 +3,7 @@ import { About } from "../../exports/components";
 
 const AboutUs = () => {
   return (
-    <div className={styles.wrapper}>
+    <div>
       <About />
     </div>
   );

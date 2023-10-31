@@ -76,3 +76,7 @@ a:hover {
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
+input{
+  font-size: 0.8rem;
+}

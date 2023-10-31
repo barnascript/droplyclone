@@ -10,7 +10,7 @@
       display: flex;
 
       select {
-        width: 100%;
+        width: 30%;
         border-right: 1px solid transparent;
         border-top-right-radius: 0px;
         border-bottom-right-radius: 0px;
@@ -27,6 +27,7 @@
         border-bottom-left-radius: 0;
         width: 100%;
         border-left: 1px solid var(--silver-chalice);
+       
       }
     }
   }
