@@ -69,17 +69,17 @@
           position: absolute;
           background-color: white;
           padding: 12px;
-          padding-left: 24px;
-          padding-right: 24px;
+          padding-left: 0;
+          padding-right: 0;
           border-radius: 8px;
           top: 80px;
-          margin-left: 20px;
+          
           box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
           display: none;
 
           a {
             padding: 6px;
-            padding-inline: 24px;
+            padding-inline: 36px;
             padding-top: 12px;
 
             &:hover {
@@ -94,16 +94,16 @@
           position: absolute;
           background-color: white;
           padding: 12px;
-          padding-left: 24px;
-          padding-right: 24px;
+          padding-left: 0;
+          padding-right: 0;
           border-radius: 8px;
           top: 80px;
-          margin-left: 20px;
+         
           box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 
           a {
             padding: 6px;
-            padding-inline: 24px;
+            padding-inline: 36px;
             padding-top: 12px;
 
             &:hover {
