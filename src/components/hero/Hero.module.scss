@@ -7,13 +7,23 @@
     flex-direction: column;
     align-items: center;
     gap: 32px;
+
     .header {
-      display: flex;
-      flex-direction: column;
+      display: inline;
       text-align: center;
+      max-width: 85%;
+
+      .unlocking {
+        color: var(--dim-gray);
+      }
+
+      .last_mile {
+        color: var(--polished-pine);
+      }
     }
 
     .hero_text {
+      max-width: 75%;
     }
 
     .buttons {
@@ -28,7 +38,10 @@
     width: 100%;
     position: relative;
     .dashboard {
-      width: 100%;
+      max-width: 90%;
+      height: 500px;
+      width: 1200px;
+      height: auto;
     }
 
     .image_black_background {
@@ -44,24 +57,53 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .wrapper {
     .container {
+      gap: 42px;
+      .header {
+        max-width: 100%;
+      }
+
+      .hero_text {
+        max-width: 100%;
+      }
+
       .buttons {
         flex-direction: column;
       }
     }
   }
 }
-@media screen and (min-width: 843px) {
+
+@media screen and (min-width: 501px) {
   .wrapper {
     .container {
+      gap: 42px;
       .header {
-        max-width: 90%;
+        max-width: 100%;
       }
 
       .hero_text {
-        max-width: 80%;
+        max-width: 100%;
+      }
+
+      .buttons {
+        flex-direction: row;
+      }
+    }
+  }
+}
+@media screen and (min-width: 801px) {
+  .wrapper {
+    .container {
+      gap: 42px;
+      .header {
+        max-width: 85%;
+      }
+
+      .hero_text {
+        max-width: 75%;
       }
     }
   }

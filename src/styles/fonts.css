@@ -101,7 +101,7 @@
 h1 {
   /* h1 */
   font-family: "PoppinsBold";
-  font-size: clamp(2.5rem, 4vw, 3rem);
+  font-size: clamp(2.5rem, 3.4vw, 3rem);
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.12px;
