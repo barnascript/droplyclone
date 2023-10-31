@@ -60,7 +60,6 @@
 
 @media screen and (max-width: 600px) {
   .wrapper {
-
     grid-gap: 30px;
     .locations {
       grid-column: span 12;
@@ -70,9 +69,7 @@
 
       form {
         .name_phone_number {
-   
           flex-direction: column;
-      
         }
       }
     }
@@ -106,7 +103,6 @@
 }
 @media screen and (min-width: 1001px) {
   .wrapper {
-
     grid-gap: 0px;
     place-items: flex-start;
     place-content: flex-start;
@@ -115,11 +111,9 @@
     .locations {
       grid-column: span 5;
       max-width: 80%;
-    
     }
     .getintouch {
       grid-column: span 7;
-
     }
   }
 }
@@ -134,10 +128,7 @@
       max-width: 100%;
     }
     .getintouch {
-    
       max-width: 100%;
-    
-
     }
   }
 }
