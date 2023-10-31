@@ -5,7 +5,6 @@
   gap: 50px;
   margin-bottom: 0px;
   height: 100vh;
- 
 
   .container {
     display: flex;
@@ -72,7 +71,6 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     place-items: center;
-
     margin-bottom: 0px;
     height: 100vh;
 
@@ -101,7 +99,6 @@
       position: absolute;
       right: 0;
       top: 70px;
-      background-color: var(--dark-blue);
     }
   }
 }
