@@ -31,7 +31,7 @@
     position: absolute;
     right: 0;
     top: 70px;
-    background-color: rgb(14, 44, 14);
+    background-color: var(--dark-blue);
   }
 }
 @media screen and (max-width: 750px) {
@@ -71,6 +71,8 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     place-items: center;
+    grid-gap: 30px;
+
     margin-bottom: 0px;
     height: 100vh;
 
@@ -99,6 +101,7 @@
       position: absolute;
       right: 0;
       top: 70px;
+      background-color: var(--dark-blue);
     }
   }
 }
