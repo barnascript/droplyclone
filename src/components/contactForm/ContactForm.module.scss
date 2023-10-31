@@ -60,8 +60,7 @@
 
 @media screen and (max-width: 600px) {
   .wrapper {
-    max-width: 100%;
-    padding-top: 80px;
+
     grid-gap: 30px;
     .locations {
       grid-column: span 12;
@@ -71,9 +70,9 @@
 
       form {
         .name_phone_number {
-          display: flex;
+   
           flex-direction: column;
-          width: 100%;
+      
         }
       }
     }
@@ -107,8 +106,7 @@
 }
 @media screen and (min-width: 1001px) {
   .wrapper {
-    max-width: 100%;
-    padding-top: 80px;
+
     grid-gap: 0px;
     place-items: flex-start;
     place-content: flex-start;
@@ -117,21 +115,11 @@
     .locations {
       grid-column: span 5;
       max-width: 80%;
-      margin: auto;
+    
     }
     .getintouch {
       grid-column: span 7;
-      padding-inline: 22px;
-      max-width: 90%;
-      margin: auto;
 
-      form {
-        .name_phone_number {
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-        }
-      }
     }
   }
 }
@@ -139,27 +127,17 @@
 @media screen and (min-width: 1201px) {
   .wrapper {
     max-width: 80%;
-    padding-top: 80px;
     grid-gap: 30px;
     height: 100%;
 
     .locations {
-      grid-column: span 5;
       max-width: 100%;
     }
     .getintouch {
-      grid-column: span 7;
-      padding-inline: 22px;
+    
       max-width: 100%;
-      margin: auto;
+    
 
-      form {
-        .name_phone_number {
-          display: flex;
-          flex-direction: row;
-          width: 100%;
-        }
-      }
     }
   }
 }
