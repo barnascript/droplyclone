@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect } from "react";
 import {
   BigButton,
   Input,
@@ -50,7 +53,12 @@ const ContactForm = () => {
               />
             </div>
             <div className={styles.phone_number}>
-              <Select label="Phone Number" placeholder="000 000 000" />
+              <Input
+                type="phone"
+                id="phone"
+                placeholder="000 000 000"
+                label="Enter Phone Number"
+              />
             </div>
           </div>
 

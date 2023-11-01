@@ -44,7 +44,7 @@ const Navbar = () => {
               About
             </Link>
             <Link scroll={false} href="/#mainblock">
-              WhyDroply
+              Why Droply
             </Link>
             {/* How Droply Works link*/}
             <a
