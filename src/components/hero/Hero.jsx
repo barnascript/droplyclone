@@ -2,6 +2,7 @@ import { BigButton } from "../../exports/mini_components";
 import styles from "./Hero.module.scss";
 import { graph } from "../../exports/images";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -20,14 +21,19 @@ const Hero = () => {
           providers.
         </p>
         <div className={styles.buttons}>
-          <BigButton
-            button_text="Merchant Sign up"
-            button_backgroundColor="var(--palatinate-blue)"
-          />
-          <BigButton
-            button_text="Change this text"
-            button_backgroundColor="var(--eerie-black)"
-          />
+          <Link href="https://droply-merchant-dashboard.vercel.app/register">
+            {" "}
+            <BigButton
+              button_text="Merchant Sign up"
+              button_backgroundColor="var(--palatinate-blue)"
+            />
+          </Link>
+          <Link href="https://wa.link/8vdbse">
+            <BigButton
+              button_text="Get Started"
+              button_backgroundColor="var(--eerie-black)"
+            />
+          </Link>
         </div>
       </div>
       <div className={` ${styles.dashboard_div}`}>
