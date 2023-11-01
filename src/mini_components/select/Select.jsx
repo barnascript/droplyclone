@@ -5,7 +5,7 @@ const Select = ({ placeholder, id, label }) => {
     <div className={styles.wrapper}>
       <label htmlFor={id} className={`text ${styles.label}`}>
         {label}
-        <div className={styles.field}>
+        {/* <div className={styles.field}>
           <select name="countrycodes" id="countrycodes">
             <option value="+93">(+93) Afghanistan</option>
             <option value="+355">(+355) Albania</option>
@@ -196,7 +196,7 @@ const Select = ({ placeholder, id, label }) => {
             <option value="+263">(+263) Zimbabwe</option>
           </select>
           <input type="number" id={id} placeholder={placeholder} />
-        </div>
+        </div> */}
       </label>
     </div>
   );
