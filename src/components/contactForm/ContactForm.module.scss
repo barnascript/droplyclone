@@ -54,12 +54,39 @@
         .phone_number {
           width: 100%;
         }
+
+        .phone_number {
+          display: flex;
+          align-self: flex-end;
+          position: relative;
+
+          select {
+            display: flex;
+            flex-direction: column;
+            padding-left: 5px;
+            height: 100%;
+            width: 45px;
+            background-color: transparent;
+            cursor: pointer;
+          }
+
+          .arrow {
+            position: absolute;
+            left: 30px;
+            top: 40%;
+            cursor: pointer;
+          }
+
+          input {
+            padding-left: 5px;
+          }
+        }
       }
     }
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   .wrapper {
     max-width: 100%;
     margin: auto;
@@ -81,15 +108,19 @@
           flex-direction: column;
           gap: 21px;
           width: 100%;
+          
+          input{
+            width: 100%;
+          }
         }
       }
     }
   }
 }
 
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 751px) {
   .wrapper {
-    max-width: 90%;
+    max-width: 100%;
     margin: auto;
 
     .locations {
@@ -109,6 +140,10 @@
           flex-direction: column;
           gap: 21px;
           width: 100%;
+
+          input {
+            width: 100%;
+          }
         }
       }
     }

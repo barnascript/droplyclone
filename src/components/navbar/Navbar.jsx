@@ -15,8 +15,6 @@ const Navbar = () => {
   const path = usePathname();
   const pathname = path.slice(1);
 
-  console.log(pathname);
-
   const handleToggleMenu = () => {
     setToggleMenu(!toggleMenu);
   };

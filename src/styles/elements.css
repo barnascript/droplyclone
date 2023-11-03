@@ -77,6 +77,10 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
-input{
+input {
   font-size: 0.8rem;
+}
+
+input:focus, textarea:focus {
+  border: 1px solid black;
 }

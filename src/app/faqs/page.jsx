@@ -1,3 +1,5 @@
+"use client";
+
 import styles from "./FaqPage.module.scss";
 import { Faq } from "@/exports/mini_components";
 
