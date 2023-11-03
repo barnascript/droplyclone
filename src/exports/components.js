@@ -14,3 +14,4 @@ export { default as MerchantBlock } from "../components/merchantBlock/MerchantBl
 export { default as MerchantBlockReverse } from "../components/merchantBlockReverse/MerchantBlockReverse.jsx";
 export { default as IndividualBlocks } from "../components/IndividualBlocks/IndividualBlocks";
 export { default as ContactForm } from "../components/contactForm/ContactForm";
+export { default as CustomerSignUp } from "../components/cutomersignup/CustomerSignUp";

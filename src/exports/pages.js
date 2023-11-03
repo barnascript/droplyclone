@@ -4,3 +4,4 @@ export { default as FaqPage } from "../pages/faqPage/FaqPage";
 export { default as Individual } from "../pages/Individual/Individual";
 export { default as Merchant } from "../pages/merchant/Merchant";
 export { default as Contact } from "../pages/contact/Contact";
+export { default as Customer } from "../pages/customer/Customer";

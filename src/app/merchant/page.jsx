@@ -1,5 +1,5 @@
 import styles from "./Merchant.module.scss";
-import { Navbar, MerchantHero, MerchantPerks, MerchantBlocks, GetInTouch, Footer } from "../../exports/components";
+import { MerchantHero, MerchantPerks, MerchantBlocks, GetInTouch } from "../../exports/components";
 
 const Merchant = () => {
   return (

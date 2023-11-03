@@ -28,7 +28,7 @@ const Hero = () => {
               button_backgroundColor="var(--palatinate-blue)"
             />
           </Link>
-          <Link href="https://wa.link/8vdbse">
+          <Link href="/customer">
             <BigButton
               button_text="Get Started"
               button_backgroundColor="var(--eerie-black)"
