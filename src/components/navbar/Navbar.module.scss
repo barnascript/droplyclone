@@ -11,15 +11,13 @@
 
     .desktop_container {
       height: inherit;
-      display: grid;
-      grid-template-columns: repeat(10, 1fr);
-      place-content: center;
-      position: relative;
-
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  
       .logo {
         display: flex;
         align-self: center;
-        grid-column: span 2;
         width: 159px;
         height: 25px;
         cursor: pointer;
@@ -33,7 +31,7 @@
         align-items: center;
         justify-content: center;
         gap: 33px;
-        grid-column: span 7;
+      
 
         a {
           color: var(--eerie-black);

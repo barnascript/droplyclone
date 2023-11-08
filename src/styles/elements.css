@@ -15,9 +15,6 @@ button {
   white-space: nowrap;
 }
 
-button:hover {
-  opacity: 0.9;
-}
 select {
   appearance: none;
   border: none;
@@ -67,11 +64,6 @@ a {
   transition: all 0.1s ease-in;
 }
 
-a:hover {
-  font-weight: 500;
-  opacity: 0.8;
-  transition: all 0.1s ease-in;
-}
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }

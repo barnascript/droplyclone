@@ -2,31 +2,31 @@
 
 import styles from "./FaqPage.module.scss";
 import { Faq } from "@/exports/mini_components";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 const FaqPage = () => {
+  const [faqdata, setFaqData] = useState([]);
+  useEffect(() => {
+    function getFaqs() {
+      axios
+        .get("https://droply-api-a4cf30ebf224.herokuapp.com/v1/faqs/")
+        .then((response) => setFaqData(response.data));
+    }
+
+    getFaqs();
+  }, []);
+
   return (
     <div className={styles.wrapper}>
       <div className={`sw ${styles.faqs_div}`}>
         <h3>Frequently Asked Questions</h3>
         <div className={styles.faqs}>
-          <div className={styles.faq}>
-            <Faq question="What is Droply?" />
-          </div>
-          <div className={styles.faq}>
-            <Faq question="Who is Droply for?" />
-          </div>
-          <div className={styles.faq}>
-            <Faq question="What are the documents needed to start using Droply?" />
-          </div>
-          <div className={styles.faq}>
-            <Faq question="What features does Droply have?" />
-          </div>
-          <div className={styles.faq}>
-            <Faq question="What can I do on Droply?" />
-          </div>
-          <div className={styles.faq}>
-            <Faq question="Who can I speak to if I have questions?" />
-          </div>
+          {faqdata?.map((datum) => (
+            <div className={styles.faq}>
+              <Faq question={datum.question} answer={datum.answer} />
+            </div>
+          ))}
         </div>
       </div>
     </div>

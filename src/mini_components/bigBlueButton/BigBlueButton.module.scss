@@ -4,5 +4,10 @@
     height: 51px;
     color: white;
     padding-inline: 40px;
+    border: 1px solid white;
+
+    &:hover {
+      outline: 2px solid var(--palatinate-blue);
+    }
   }
 }

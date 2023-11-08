@@ -6,12 +6,18 @@ import "../styles/index.css";
 import "../styles/elements.css";
 import "../styles/fonts.css";
 import { Footer, Navbar } from "@/exports/components";
+
 export const metadata: Metadata = {
   title: "DROPLY",
-  description: "Unlocking Efficiency and Fueling Growth: Your Last-Mile Success Partner",
+  description:
+    "Unlocking Efficiency and Fueling Growth: Your Last-Mile Success Partner",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>
@@ -22,4 +28,3 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
-

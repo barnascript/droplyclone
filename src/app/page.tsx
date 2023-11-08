@@ -1,5 +1,6 @@
 import { GetInTouch, Hero, HomeFaq, MainBlock } from "@/exports/components";
 import styles from "./Home.module.scss";
+import axios from "axios";
 
 const Home = () => {
   return (

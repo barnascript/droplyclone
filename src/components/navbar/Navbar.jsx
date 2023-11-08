@@ -110,13 +110,16 @@ const Navbar = () => {
           {/* Auth Buttons */}
           <div className={styles.buttons}>
             {/* Sign Up */}
-            <Button
-              button_text="Sign up"
-              button_bgColor="var(--palatinate-blue)"
-              button_color="white"
-              paddingInline="24px"
-              height="33px"
-            />
+            <Link href="https://droply-merchant-dashboard.vercel.app/register">
+              {" "}
+              <Button
+                button_text="Sign up"
+                button_bgColor="var(--palatinate-blue)"
+                button_color="white"
+                paddingInline="24px"
+                height="33px"
+              />
+            </Link>
             {/* Login */}
             <Button
               button_text="Login"

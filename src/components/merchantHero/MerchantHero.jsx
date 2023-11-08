@@ -11,7 +11,8 @@ const MerchantHero = () => {
         <div className={styles.heading}>
           <h1>For Last-Mile Delivery Businesses</h1>
           <p className={`subtitle ${styles.description}`}>
-            The Droply last-mile operating system is the solution you have been waiting for.
+            The Droply last-mile operating system is the solution you have been
+            waiting for.
           </p>
         </div>
         <BigBlueButton button_text="Get Started" />
