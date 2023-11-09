@@ -15,7 +15,10 @@ const MerchantHero = () => {
             waiting for.
           </p>
         </div>
-        <BigBlueButton button_text="Get Started" />
+        <BigBlueButton
+          button_text="Get Started"
+          href="https://droply-merchant-dashboard.vercel.app/register"
+        />
       </div>
     </div>
   );
