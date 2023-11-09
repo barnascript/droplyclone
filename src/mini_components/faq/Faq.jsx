@@ -4,7 +4,17 @@ import { arrow_down_light } from "../../exports/icons";
 import { useState } from "react";
 import Image from "next/image";
 
-const Faq = ({ question, answer }) => {
+const Faq = ({
+  question,
+  pointa,
+  pointb,
+  pointc,
+  pointd,
+  title1,
+  title2,
+  pointy,
+  pointz,
+}) => {
   const [toggleFaq, setToggleFaq] = useState(false);
 
   return (
@@ -17,9 +27,24 @@ const Faq = ({ question, answer }) => {
         <Image src={arrow_down_light} alt="arrow_down_light" />
       </div>
       {toggleFaq && (
-        <p className={styles.answer} onClick={() => setToggleFaq(!toggleFaq)}>
-          {answer}
-        </p>
+        <div className={styles.answer} onClick={() => setToggleFaq(!toggleFaq)}>
+          <div className={styles.first}>
+            <span>{title1}</span>
+            <ul>
+              <li>{pointa}</li>
+              <li>{pointb}</li>
+              <li>{pointc}</li>
+              <li>{pointd}</li>
+            </ul>
+          </div>
+          <div className={styles.second}>
+            <span>{title2}</span>
+            <ul>
+              <li>{pointy}</li>
+              <li>{pointz}</li>
+            </ul>
+          </div>
+        </div>
       )}
     </div>
   );
