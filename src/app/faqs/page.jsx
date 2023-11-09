@@ -24,7 +24,7 @@ const FaqPage = () => {
         <h3>Frequently Asked Questions</h3>
         <div className={styles.faqs}>
           {faqdata.map((datum) => (
-            <div className={styles.faq}>
+            <div className={styles.faq} key={datum.id}>
               <Faq
                 question={datum.question}
                 title1={datum.answer.title1}
