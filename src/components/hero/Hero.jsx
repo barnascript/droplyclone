@@ -30,7 +30,7 @@ const Hero = () => {
           </Link>
           <Link href="/customer">
             <BigButton
-              button_text="Get Started"
+              button_text="Make A Delivery"
               button_backgroundColor="var(--eerie-black)"
             />
           </Link>

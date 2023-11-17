@@ -35,16 +35,9 @@ const ContactForm = () => {
           title="Our Headquarters"
           city="Lagos, Nigeria"
           heading="Address:"
-          text="24, Alagbado Close, Ijaye
-        Okota Estate near ikotun-ekpene road."
+          text="Sterling Towers, 20 Marina Road, Lagos."
         />
-        <Location
-          title="Other Offices"
-          city="Abuja, Nigeria"
-          heading="Address:"
-          text="24, Alagbado Close, Ijaye
-        Okota Estate near ikotun-ekpene road."
-        />
+
         <Location
           title="Contact Details"
           heading="Email:"

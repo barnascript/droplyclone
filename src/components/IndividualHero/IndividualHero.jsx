@@ -21,7 +21,7 @@ const Individual = () => {
               height="51px"
               paddingInline="40px"
               button_color="white"
-              button_text="Sign up for free"
+              button_text="Make A Delivery"
               href="https://wa.link/8vdbse"
             />
           </div>
