@@ -14,7 +14,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-  
+
       .logo {
         display: flex;
         align-self: center;
@@ -31,7 +31,6 @@
         align-items: center;
         justify-content: center;
         gap: 33px;
-      
 
         a {
           color: var(--eerie-black);
@@ -126,7 +125,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .wrapper {
     height: 70px;
     background-color: white;
@@ -380,7 +379,7 @@
     }
   }
 }
-@media screen and (min-width: 601px) and (max-width: 1050px) {
+@media screen and (min-width: 701px) and (max-width: 1150px) {
   .wrapper {
     height: 70px;
     background-color: white;

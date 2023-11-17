@@ -146,7 +146,7 @@ const Navbar = () => {
               <div className={styles.buttons}>
                 {/* Mobile Sign Up */}
                 <Button
-                  button_text="Sign up"
+                  button_text="Merchant Sign up"
                   button_bgColor="var(--palatinate-blue)"
                   button_color="white"
                   paddingInline="24px"
@@ -154,7 +154,7 @@ const Navbar = () => {
                 />
                 {/* Mobile Login */}
                 <Button
-                  button_text="Login"
+                  button_text="Merchant Login"
                   button_bgColor="var(--eerie-black)"
                   button_color="white"
                   paddingInline="24px"
@@ -229,8 +229,12 @@ const Navbar = () => {
             </div>
             {/* Mobile Dropdown Buttons */}
             <div className={styles.buttons}>
-              <button className={styles.mobile_blue_button}>Sign Up</button>
-              <button className={styles.mobile_black_button}>Login</button>
+              <button className={styles.mobile_blue_button}>
+                Merchant Sign Up
+              </button>
+              <button className={styles.mobile_black_button}>
+                Merchant Login
+              </button>
             </div>
           </div>
         </div>
