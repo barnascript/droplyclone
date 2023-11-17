@@ -4,10 +4,12 @@
     height: 51px;
     color: white;
     padding-inline: 40px;
-    border: 1px solid white;
+    border: 1px solid transparent;
+    outline: 2px solid transparent;
 
     &:hover {
       outline: 2px solid var(--palatinate-blue);
+      border: 1px solid white;
     }
   }
 }
