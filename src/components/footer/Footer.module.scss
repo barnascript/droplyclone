@@ -82,48 +82,7 @@
     }
   }
 }
-
 @media screen and (min-width: 601px) {
-  .wrapper {
-    .container {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      border-bottom: 1px solid var(--tundora);
-
-      .logo_and_address {
-        grid-column: span 6;
-        max-width: 80%;
-        padding-bottom: 40px;
-      }
-      .links {
-        grid-column: span 6;
-        border-bottom: 1px solid transparent;
-        padding-bottom: 48px;
-      }
-    }
-  }
-}
-@media screen and (min-width: 901px) {
-  .wrapper {
-    .container {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      border-bottom: 1px solid var(--tundora);
-
-      .logo_and_address {
-        grid-column: span 4;
-        max-width: 80%;
-        padding-bottom: 40px;
-      }
-      .links {
-        grid-column: span 4;
-        border-bottom: 1px solid transparent;
-        padding-bottom: 48px;
-      }
-    }
-  }
-}
-@media screen and (min-width: 1100px) {
   .wrapper {
     .container {
       display: grid;
@@ -131,11 +90,42 @@
       border-bottom: 1px solid transparent;
 
       .logo_and_address {
-        grid-column: span 3;
+        grid-column: span 6;
         max-width: 80%;
         padding-bottom: 40px;
       }
+
       .links {
+        border-bottom: 1px solid transparent;
+      }
+
+      .links:nth-child(4),
+      .links:nth-child(3) {
+        grid-column: span 6;
+        border-bottom: 1px solid transparent;
+        padding-bottom: 48px;
+        border-bottom: 1px solid var(--tundora);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .wrapper {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(15, 1fr);
+      border-bottom: 1px solid transparent;
+
+      .logo_and_address {
+        grid-column: span 6;
+        max-width: 80%;
+        padding-bottom: 40px;
+      }
+
+      .links:nth-child(4),
+      .links:nth-child(3),
+      .links:nth-child(2) {
         grid-column: span 3;
         border-bottom: 1px solid transparent;
         padding-bottom: 48px;
