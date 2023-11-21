@@ -6,7 +6,7 @@ import { BigBlueButton } from "../../exports/mini_components";
 const Individual = () => {
   return (
     <div className={`sw ${styles.wrapper}`}>
-      <div className={`${styles.container}`}>
+      <div className={`  ${styles.container}`}>
         <div className={styles.text_div}>
           <div className={styles.hero_text}>
             <h1>
