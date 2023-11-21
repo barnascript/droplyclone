@@ -36,7 +36,7 @@ const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className={` ${styles.dashboard_div}`}>
+      <div className={`${styles.dashboard_div}`}>
         <Image
           src={graph}
           alt="dashboard"
