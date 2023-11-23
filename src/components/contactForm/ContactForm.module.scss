@@ -108,8 +108,8 @@
           flex-direction: column;
           gap: 21px;
           width: 100%;
-          
-          input{
+
+          input {
             width: 100%;
           }
         }
@@ -125,7 +125,7 @@
 
     .locations {
       grid-column: span 5;
-      width: 100%;
+      width: auto;
     }
     .getintouch {
       grid-column: span 7;
@@ -156,7 +156,7 @@
 
     .locations {
       grid-column: span 5;
-      width: 100%;
+      width: auto;
     }
     .getintouch {
       grid-column: span 7;
