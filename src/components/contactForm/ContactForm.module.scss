@@ -1,103 +1,102 @@
-.wrapper {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  width: 100%;
-  max-width: 80%;
-  margin: auto;
-  grid-gap: 27px;
-  padding-top: 47px;
-  padding-bottom: 203px;
-  .locations {
-    grid-column: span 5;
-    width: 100%;
-  }
-  .getintouch {
-    background-color: white;
-    padding-inline: 44px;
-    padding-top: 52px;
-    padding-bottom: 52px;
-    border-radius: 8px;
-    grid-column: span 7;
-    display: flex;
-    flex-direction: column;
-    gap: 38px;
+// .wrapper {
+//   display: grid;
+//   grid-template-columns: repeat(12, 1fr);
+//   width: 100%;
+//   max-width: 80%;
+//   margin: auto;
+//   grid-gap: 27px;
+//   padding-top: 47px;
+//   padding-bottom: 203px;
+//   .locations {
+//     grid-column: span 5;
+//     width: 100%;
+//   }
+//   .getintouch {
+//     background-color: white;
+//     padding-inline: 44px;
+//     padding-top: 52px;
+//     padding-bottom: 52px;
+//     border-radius: 8px;
+//     grid-column: span 7;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 38px;
 
-    .header {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 8px;
-      text-align: center;
-      h6 {
-        font-weight: 900;
-      }
-      p {
-        color: var(--gray);
-      }
-    }
+//     .header {
+//       display: flex;
+//       flex-direction: column;
+//       align-items: center;
+//       gap: 8px;
+//       text-align: center;
+//       h6 {
+//         font-weight: 900;
+//       }
+//       p {
+//         color: var(--gray);
+//       }
+//     }
 
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 28px;
-      width: 100%;
+//     form {
+//       display: flex;
+//       flex-direction: column;
+//       gap: 28px;
+//       width: 100%;
 
-      .name_phone_number {
-        display: flex;
-        align-self: flex-end;
-        justify-self: flex-end;
-        align-items: center;
-        gap: 21px;
-        width: 100%;
+//       .name_phone_number {
+//         display: flex;
+//         align-self: flex-end;
+//         justify-self: flex-end;
+//         align-items: center;
+//         gap: 21px;
+//         width: 100%;
 
-        .name,
-        .phone_number {
-          width: 100%;
-        }
+//         .name,
+//         .phone_number {
+//           width: 100%;
+//         }
 
-        .phone_number {
-          display: flex;
-          align-self: flex-end;
-          position: relative;
+//         .phone_number {
+//           display: flex;
+//           align-self: flex-end;
+//           position: relative;
 
-          select {
-            display: flex;
-            flex-direction: column;
-            padding-left: 5px;
-            height: 100%;
-            width: 45px;
-            background-color: transparent;
-            cursor: pointer;
-          }
+//           select {
+//             display: flex;
+//             flex-direction: column;
+//             padding-left: 5px;
+//             height: 100%;
+//             width: 45px;
+//             background-color: transparent;
+//             cursor: pointer;
+//           }
 
-          .arrow {
-            position: absolute;
-            left: 30px;
-            top: 40%;
-            cursor: pointer;
-          }
+//           .arrow {
+//             position: absolute;
+//             left: 30px;
+//             top: 40%;
+//             cursor: pointer;
+//           }
 
-          input {
-            padding-left: 5px;
-          }
-        }
-      }
-    }
-  }
-}
+//           input {
+//             padding-left: 5px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
 
 @media screen and (max-width: 750px) {
   .wrapper {
     max-width: 100%;
     margin: auto;
-    grid-gap: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     .locations {
-      grid-column: span 12;
       width: 100%;
     }
     .getintouch {
-      grid-column: span 12;
-
       form {
         display: flex;
         flex-direction: column;
@@ -132,7 +131,7 @@
         display: flex;
         flex-direction: column;
         gap: 28px;
-        width: 100%;
+        width: auto;
 
         .name_phone_number {
           flex-direction: column;
@@ -162,7 +161,7 @@
         display: flex;
         flex-direction: column;
         gap: 28px;
-        width: 100%;
+        width: auto;
 
         .name_phone_number {
           flex-direction: row;
