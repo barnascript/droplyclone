@@ -10,8 +10,7 @@ import {
 } from "../../exports/mini_components";
 import styles from "./ContactForm.module.scss";
 import data from "./data";
-import { Icon } from "../../exports/components";
-import { arrow_down_light } from "@/exports/icons";
+import { arrow_down_light } from "../../exports/icons";
 import Image from "next/image";
 
 const ContactForm = () => {
@@ -75,11 +74,9 @@ const ContactForm = () => {
                 ))}
               </select>
               <Image
-                src="../assets/arrow_down_light.svg"
+                src={arrow_down_light}
                 alt="arrow_down"
                 className={styles.arrow}
-                width={20}
-                height={20}
               />
 
               <input
