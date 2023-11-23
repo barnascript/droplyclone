@@ -30,19 +30,23 @@ const ContactForm = () => {
   return (
     <div className={`sw ${styles.wrapper}`}>
       <div className={styles.locations}>
-        <Location
-          title="Our Headquarters"
-          city="Lagos, Nigeria"
-          heading="Address:"
-          text="Sterling Towers, 20 Marina Road, Lagos."
-        />
+        <div>
+          <Location
+            title="Our Headquarters"
+            city="Lagos, Nigeria"
+            heading="Address:"
+            text="Sterling Towers, 20 Marina Road, Lagos."
+          />
+        </div>
 
-        <Location
-          title="Contact Details"
-          heading="Email:"
-          text="hello@droply.com"
-          display="none"
-        />
+        <div>
+          <Location
+            title="Contact Details"
+            heading="Email:"
+            text="hello@droply.com"
+            display="none"
+          />
+        </div>
       </div>
       <div className={styles.getintouch}>
         <div className={styles.header}>
@@ -86,12 +90,14 @@ const ContactForm = () => {
             </div>
           </div>
 
-          <Input
-            type="email"
-            id="email"
-            placeholder="rhoda@frydodo.org"
-            label="Email Address"
-          />
+          <div>
+            <Input
+              type="email"
+              id="email"
+              placeholder="rhoda@frydodo.org"
+              label="Email Address"
+            />
+          </div>
           <TextArea placeholder="Enter your message" label="Label" />
           <BigButton
             button_text="Send Message"
