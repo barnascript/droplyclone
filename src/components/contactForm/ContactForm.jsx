@@ -5,7 +5,6 @@ import {
   BigButton,
   Input,
   Location,
-  Select,
   TextArea,
 } from "../../exports/mini_components";
 import styles from "./ContactForm.module.scss";
