@@ -125,14 +125,14 @@
     width: fit-content;
 
     .locations {
-      width: 50%;
+      width: auto;
     }
     .getintouch {
       form {
         display: flex;
         flex-direction: column;
         gap: 28px;
-        width: fit-content;
+        width: auto;
 
         .name_phone_number {
           flex-direction: column;
