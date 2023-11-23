@@ -124,11 +124,11 @@
     margin: auto;
 
     .locations {
-      grid-column: span 5;
+      grid-column: span 5 !important;
       width: auto;
     }
     .getintouch {
-      grid-column: span 7;
+      grid-column: span 7 !important;
 
       form {
         display: flex;
