@@ -1,8 +1,9 @@
 import { BigButton } from "../../exports/mini_components";
 import styles from "./Hero.module.scss";
-import { graph } from "../../exports/images";
+// import { graph } from "../../exports/images";
 import Image from "next/image";
 import Link from "next/link";
+export const graph = "/assets/images/graph.png";
 
 const Hero = () => {
   return (
@@ -41,6 +42,7 @@ const Hero = () => {
           src={graph}
           alt="dashboard"
           className={`sw ${styles.dashboard}`}
+          priority
         />
         <div className={styles.image_black_background}></div>
       </div>
