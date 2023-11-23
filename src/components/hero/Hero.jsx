@@ -23,7 +23,6 @@ const Hero = () => {
         </p>
         <div className={styles.buttons}>
           <Link href="https://droply-merchant-dashboard.vercel.app/register">
-            {" "}
             <BigButton
               button_text="Merchant Sign up"
               button_backgroundColor="var(--palatinate-blue)"
