@@ -42,7 +42,6 @@ const Hero = () => {
           alt="dashboard"
           className={`sw ${styles.dashboard}`}
           priority
-          unoptimized
         />
         <div className={styles.image_black_background}></div>
       </div>
