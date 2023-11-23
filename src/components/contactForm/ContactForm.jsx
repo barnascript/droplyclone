@@ -12,6 +12,7 @@ import styles from "./ContactForm.module.scss";
 import data from "./data";
 import { Icon } from "../../exports/components";
 import { arrow_down_light } from "@/exports/icons";
+import Image from "next/image";
 
 const ContactForm = () => {
   const [countries, setCountries] = useState(data);
@@ -77,11 +78,9 @@ const ContactForm = () => {
                 src="../assets/arrow_down_light.svg"
                 alt="arrow_down"
                 className={styles.arrow}
+                width={20}
+                height={20}
               />
-
-              <div>
-                <Icon width={20} height={20} icon={arrow_down_light} />
-              </div>
 
               <input
                 type="tel"
