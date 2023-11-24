@@ -15,14 +15,13 @@ const MerchantLoginForm = () => {
           <Password />
         </div>
         <div className={styles.button}>
-          <BigBlueButton button_text="Login" href="#" width="100%" />
+          <BigBlueButton button_text="Login" href="/merchant" width="100%" />
         </div>
-
-        <p>
+        <div>
           By clicking “Log In” you agree to Droply's <span>Privacy policy</span>{" "}
           and
           <span> Terms of Service</span>
-        </p>
+        </div>
       </div>
     </div>
   );
