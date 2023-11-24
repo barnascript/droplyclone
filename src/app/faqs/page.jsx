@@ -1,7 +1,8 @@
 "use client";
 
 import styles from "./FaqPage.module.scss";
-import { Faq, Navbar } from "@/exports/mini_components";
+import { Faq } from "@/exports/mini_components";
+import { Navbar } from "@/exports/components";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import data from "../../components/a";

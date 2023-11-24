@@ -18,9 +18,8 @@ const MerchantLoginForm = () => {
           <BigBlueButton button_text="Login" href="/merchant" width="100%" />
         </div>
         <div>
-          By clicking “Log In” you agree to Droply's <span>Privacy policy</span>{" "}
-          and
-          <span> Terms of Service</span>
+          By clicking &quotLog In&quot you agree to Droply&aposs{" "}
+          <span>Privacy policy</span> and <span>Terms of Service</span>
         </div>
       </div>
     </div>
