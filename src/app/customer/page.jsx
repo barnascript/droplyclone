@@ -1,8 +1,9 @@
-import { CustomerSignUp } from "@/exports/components";
+import { Navbar, CustomerSignUp } from "@/exports/components";
 
 const Customer = () => {
   return (
     <>
+      <Navbar />
       <CustomerSignUp />
     </>
   );

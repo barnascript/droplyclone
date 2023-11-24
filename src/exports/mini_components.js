@@ -10,3 +10,4 @@ export { default as Location } from "../mini_components/location/Location";
 export { default as Input } from "../mini_components/input/Input";
 export { default as Select } from "../mini_components/select/Select";
 export { default as TextArea } from "../mini_components/textarea/TextArea";
+export { default as Password } from "../mini_components/password/Password";

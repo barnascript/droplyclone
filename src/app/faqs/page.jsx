@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./FaqPage.module.scss";
-import { Faq } from "@/exports/mini_components";
+import { Faq, Navbar } from "@/exports/mini_components";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import data from "../../components/a";
@@ -20,6 +20,7 @@ const FaqPage = () => {
 
   return (
     <div className={styles.wrapper}>
+      <Navbar />
       <div className={`sw ${styles.faqs_div}`}>
         <h3>Frequently Asked Questions</h3>
         <div className={styles.faqs}>

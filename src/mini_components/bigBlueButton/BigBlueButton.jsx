@@ -1,10 +1,10 @@
 import styles from "./BigBlueButton.module.scss";
 import Link from "next/link";
 
-const BigBlueButton = ({ button_text, href }) => {
+const BigBlueButton = ({ button_text, href, width }) => {
   return (
     <Link href={href} className={styles.wrapper}>
-      <button>{button_text}</button>
+      <button style={{ width: width }}>{button_text}</button>
     </Link>
   );
 };

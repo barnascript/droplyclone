@@ -1,0 +1,10 @@
+.wrapper {
+  height: 70px;
+  background-color: var(--white, #fff);
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+  }
+}

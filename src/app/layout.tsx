@@ -18,10 +18,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  console.log("123");
   return (
     <html lang="en">
       <body>
-        <Navbar />
         {children}
         <Footer />
       </body>

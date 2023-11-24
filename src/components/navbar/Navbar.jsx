@@ -121,13 +121,15 @@ const Navbar = () => {
               />
             </Link>
             {/* Login */}
-            <Button
-              button_text="Merchant Login"
-              button_bgColor="var(--eerie-black)"
-              button_color="white"
-              paddingInline="24px"
-              height="33px"
-            />
+            <Link href="/merchant-login">
+              <Button
+                button_text="Merchant Login"
+                button_bgColor="var(--eerie-black)"
+                button_color="white"
+                paddingInline="24px"
+                height="33px"
+              />
+            </Link>
           </div>
         </div>
       </div>

@@ -16,3 +16,5 @@ export { default as IndividualBlocks } from "../components/IndividualBlocks/Indi
 export { default as ContactForm } from "../components/contactForm/ContactForm";
 export { default as CustomerSignUp } from "../components/cutomersignup/CustomerSignUp";
 export { default as Icon } from "../components/Icon";
+export { default as NavbarTwo } from "../components/navbarTwo/NavbarTwo";
+export { default as MerchantLoginForm } from "../components/merchantLoginForm/MerchantLoginForm";
