@@ -119,7 +119,7 @@
 
 @media screen and (min-width: 751px) {
   .wrapper {
-    max-width: 100%;
+    max-width: 70%;
     margin: auto;
     display: flex;
     width: fit-content;
@@ -147,30 +147,30 @@
     }
   }
 }
-@media screen and (min-width: 1150px) {
-  .wrapper {
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    max-width: 80%;
-    margin: auto;
-    .locations {
-      width: 100%;
-    }
-    .getintouch {
-      width: 100%;
-      form {
-        display: flex;
-        flex-direction: column;
-        gap: 28px;
-        width: auto;
+// @media screen and (min-width: 1150px) {
+//   .wrapper {
+//     display: flex;
+//     align-self: center;
+//     justify-self: center;
+//     max-width: 80%;
+//     margin: auto;
+//     .locations {
+//       width: 100%;
+//     }
+//     .getintouch {
+//       width: 100%;
+//       form {
+//         display: flex;
+//         flex-direction: column;
+//         gap: 28px;
+//         width: auto;
 
-        .name_phone_number {
-          flex-direction: row;
-          gap: 21px;
-          width: 100%;
-        }
-      }
-    }
-  }
-}
+//         .name_phone_number {
+//           flex-direction: row;
+//           gap: 21px;
+//           width: 100%;
+//         }
+//       }
+//     }
+//   }
+// }
